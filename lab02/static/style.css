@@ -27,14 +27,38 @@ main {
     margin: 3vh;
 }
 
-div {
+section > div{
+  align-items: center;
   border-style: solid;
+  border-width: thin;
+  width: fit-content;
+  border-color: #EEE
+};
+
+section h2 p {
+    justify-content: center;
+}
+
+img{
+    width: 400px; 
+    height: 300px
 }
 
 @media only screen and (max-width: 1000px) {
     /* Media queries go here */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section {
+        width: calc(50% - 20px);
+        
+    }
 }
 
 @media only screen and (max-width: 600px) {
     /* Media queries go here */
+    section {
+        width: 100%;
+    }
 }

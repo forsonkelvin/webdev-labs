@@ -14,20 +14,17 @@
   {% include 'includes/header.html' %}
 
   <main>
-    <!-- <p>Search location: {{city}}</p>
-    <p>Search term: {{search_term or 'None Specified'}}</p>
-    <p>Data: {{ restaurant }}</p>
-    <h2>Top Restaurant:</h2>
-    <p>Name: {{ restaurant.get('name') }}</p> -->
-    <div>
-      <h2>{{restaurant.get('name')}}</h2>
-      <img width="470px" height="300px" src="{{restaurant.get('image_url')}}" alt="restuarent-view" />
-      <p>{{restaurant.get('display_address')}}</p>
-      <p>Price:  {{restaurant.get('price')}}</p>
-      <p>Rating:  {{restaurant.get('rating')}}</p>
-      <p># Reviews:  {{restaurant.get('')}}</p>
-    </div>
-
+      <section>
+        <div>
+            <h2>{{restaurant.get('name')}}</h2>
+          <img  src="{{restaurant.get('image_url')}}" alt="restuarent-view" />
+          <p>{{restaurant.get('display_address')}}</p>
+          <p>Price:  {{restaurant.get('price')}}</p>
+          <p>Rating:  {{restaurant.get('rating')}}</p>
+          <p># Reviews:  {{restaurant.get('')}}</p>
+      </section>
+        </div>
+        
   </main>
 </body>
 
